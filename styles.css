@@ -26,6 +26,10 @@ body {
   align-self: center;
 }
 
+.isotype {
+  display: none;
+}
+
 .footer {
   height: 10vh;
   display: grid;
@@ -43,6 +47,11 @@ body {
   overflow: hidden;
   grid-column: 6 / span 6;
   align-self: center;
+}
+
+.menuicon {
+  display: none;
+  grid-column: 11 / span 1;
 }
 
 .menulist {
@@ -116,4 +125,44 @@ body {
   align-items: center;
   justify-items: center;
   color: rgba(17, 17, 35,1);
+  height: 150px;
+  overflow: auto;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .imagotype {
+    display: none;
+  }
+
+  .isotype {
+    display: block;
+    padding-left: 10px;
+  }
+
+  .navbar {
+    display: none;
+  }
+  
+  .menuicon {
+    display: block;
+    padding-right: 15px;
+  }
+  
+  .filters {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .articles {
+    grid-column: 1 / span 10;
+    grid-row: 1 / span 12;
+  }
 }
